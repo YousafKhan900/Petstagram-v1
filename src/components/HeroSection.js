@@ -1,21 +1,22 @@
 import React from "react";
-import "../App.css";
+import "../css/App.css";
 import { Button } from "./Button";
-import "./HeroSection.css";
+import "../css/HeroSection.css";
 
 function HeroSection() {
   return (
     <div className="hero-container">
       {/* <video src="/videos/video-2.mp4" autoPlay loop muted /> */}
-      <h1>Welcome to my brand new responsive website</h1>
-      <p>check it out!</p>
+      <h1>Welcome to Petstagram</h1>
+      <p>Share your pet's life</p>
       <div className="hero-btns">
         <Button
+          to={"/sign-up"}
           className="btns"
           buttonStyle="btn--outline"
           buttonSize="btn--large"
         >
-          Get Started
+          Sign Up
         </Button>
         <Button
           className="btns"
